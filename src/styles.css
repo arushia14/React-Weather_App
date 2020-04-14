@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+  text-align: center;
+}
+
+.app {
+  background-image: url("https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.app.cold {
+  background-image: url("https://images.unsplash.com/photo-1551819795-d95886f5d8fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.app.warm {
+  background-image: url("https://images.unsplash.com/photo-1564241808878-2ae9104d10e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80");
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 5%;
+}
+
+.search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 10px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.search-bar :focus {
+  background-color: rbga(255, 255, 255, 0.8);
+}
+
+.location {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 4rem;
+  color: white;
+  outline: 2px black;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.date {
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+  color: white;
+  font-style: oblique;
+}
+
+.temp {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 6px grey;
+  background-color: rbga(255, 255, 255, 0.8);
+}
+
+.weather {
+  margin: 2%;
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
