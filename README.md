@@ -2,4 +2,3 @@
 
 This is a simple weather app made using React, and uses the OpenWeatherMap API to fetch the weather details. 
 
-The final version can be visited at https://csb-hyjpn-iao108a4c.now.sh/
